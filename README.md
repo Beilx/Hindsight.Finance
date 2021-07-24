@@ -1,0 +1,1 @@
+﻿Crypto token ROI analyzer
