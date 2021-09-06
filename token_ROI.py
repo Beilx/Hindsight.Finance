@@ -47,8 +47,8 @@ st.write('''## Select Base Currency''')
 selected_currency_type = st.selectbox('Select Currency', ['usd'])
 
 # Amount invested
-st.write('''## Specify Amount''')
-selected_amount = st.number_input(" Amount: ", min_value=1, max_value=999999999)
+st.write('''## Specify Amount (in dollars $)''')
+selected_amount = st.number_input(" Amount: ", min_value=1, max_value=999999999, value=1000)
 
 #Loading Data
 crypto_current = cg.get_price(id, vs_currencies=selected_currency_type)[id][selected_currency_type]
